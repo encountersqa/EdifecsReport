@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="extent.css">  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+<head>
+<title>Smoke Test Report</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+</head>
+<body>
+
+<script type="text/javascript" async src=https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914></script>
+<script src=https://ad.doubleclick.net/ddm/adj/N762302.197812NSO.CODESRV/B21627307.227958516;sz=1x2;ord=773031409369?></script>
+
+
+<div class="header">
+<img src="imgs/logo.png" style="width: 126px; height: 50px; margin-right: 2950px; ">
+ 
+   <p align="center" ><b>Edifecs Test Automation - Smoke Test Results</b> </p> 
+<p class="edifecsimg"><img src="imgs/edifecs.PNG" style="width: 120px; height: 41px; margin-left: 840px; margin-top: -3px;  "> </p>
+
+</div>
+
+<div class="menu-bar">
+<ul class="list">
+  
+  <li  ><a href="index.html">	SUMMARY </a></li>  
+   <li  ><a href="TestReport.html">  ENVIRONMENT  </a> </li> 
+  
+  </ul>
+  
+  <ul class="releaseplan">
+ 			
+					<p class = "para">   Release Name : <label style="color: #E3725F; font-weight: bold;">Edifecs 22-V</label> <br>
+					  Release Date : <label style="color: #E3725F; font-weight: bold;">12-09-2022</label><br>
+					 Overall Test Status : <label style="color:#32cd32; font-weight: bold; ">Passed</label> </p>
+			
+				
+</ul>
+
+								
+</div>
+
+
+
+ <div class="main">
+ 		<div class="sidemenu">
+ 				
+ 				<label class="sidetitle">MARKETS <img src="imgs/down-arrow.png" style="width: 21px; height: 17px; "></label>
+ 				<a id="link" href="#">AR</a>
+ 				<a href="#">CA</a>
+ 				<a href="#"  >MAO</a>
+ 				<a href="#"  >KY</a>
+ 				<a href="#"  >MN</a>
+ 				<a href="#" >MD</a>
+ 				<a href="#" >COR6</a>
+ 				<a href="#" >NC</a>
+ 				<a href="#" >NV</a>
+ 				<a href="#" >GA</a>
+ 				<a href="#" >FLMMA_ENC</a>
+ 				<a href="#" >IOWA</a>
+ 				<a href="#" >TNC</a>
+ 				<a href="#" >NYAPD</a>
+ 				<a href="#" >NYOSDS</a>
+ 				<a href="#" >WNYAPD</a>
+ 				<a href="#" >WNYOSDS</a>
+ 				<a href="#" >TX</a>
+ 				<a href="#" >VA</a>
+ 				<a href="#" >TNE</a>
+ 				<a href="#" >TND</a>
+ 				<a href="#" >TNW</a>
+ 				<a href="#" >TNC</a>
+ 				<a href="#" >IN</a>
+ 				<a href="#" >LA</a>
+ 				<a href="#" >SC</a>
+ 				<a href="#" >WA</a>
+ 				<a href="#" >WI</a>
+ 				<a href="#" >WV</a>
+ 				<a href="#" >OPAD</a>
+ 				<a href="#" >NE</a>
+ 				<a href="#" >NJ</a>
+ 				<a href="#" >NJDSNP</a>
+ 				<a href="#" >LACARE</a>
+ 				<a href="#" >NCCHIP</a>
+ 				<a href="#" >TXCAID</a>
+ 				<a href="#" >NCDSNP</a>
+ 				
+ 			
+ 		</div>
+ 		 <label class="envclass"> Env : </label> <!--  <input type="text" id="txtvalue" style="height: 17px; width:130px;"/>  -->
+ 		 <label id="txtvalue" style="height: 17px; width:30px;">
+ 		 <select  id="env" >
+  				<!--  <option value="">ENVIRONMENT..</option> -->
+  				<!-- <option value="TestReport.html"> SIT </option> -->
+  				<option value="TestReport.html"> UAT </option>
+  				<option value="TestReport.html"> PRE_PROD </option>
+  			</select>
+ 		 </label>
+ 		 
+ 		  <label class = "envmarket">  Market :  </label><label id="demo" style="width: 0; "> </label>	
+ 		 <label id="demo1" style="width: 0; "> </label>
+ 		  
+ 		  <div  id="content" class="tctableclass">
+ 		  <table class="tctable" >
+ 	
+    			<tr class="tctabletr">
+      				<th>Test Case</th>
+      				<th>Test Steps</th>
+          		</tr>
+          	<tr class="tctabletr">
+ 		<iframe id="iframeid" name ="frame" src=""></iframe> 
+ 		</tr>
+ 			
+          	</table>
+          	</div>	
+ 		
+ 		
+ </div> 
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> 
+<script type="text/javascript">
+	
+	
+
+	var text = document.getElementsByTagName('a');
+	
+	for(var i=0;i<text.length;i++){
+		text[i].onclick = function()
+		{
+	var env = document.getElementById('env').options[document.getElementById('env').selectedIndex].text;		
+			
+	document.getElementById("demo").innerHTML=this.innerText;
+	
+	/*
+	const i = document.querySelector('#iframeid');
+	i.src = i.src;
+	*/
+	
+	var link1 = env +"\\" + this.innerText +"_ EdifecsReport.html";
+	/* document.getElementById("demo1").innerHTML=link1; */
+	
+	document.getElementById("iframeid").src = link1;
+	
+	
+	
+		
+	
+	};
+	
+}
+	
+
+</script>
+<script type="text/javascript">
+function getId()
+{ 
+	var d=document.getElementById("env");
+	var text=d.options[d.selectedIndex].text;
+	document.getElementById("txtvalue").innerHTML=text;
+}
+
+
+
+</script>
+ 
+ 
+ 
+ <!-- 
+ 
+ var s = document.write(text[i]);
+	
+	var link1 = "C:\Users\Public\Test Report\WebContent\Test Reports"+ text[i] +"_EdifecsReport.html";
+	document.getElementById("demo1").innerHTML=link1;
+}
+ 
+  -->
+ 
+
+</body>
+
+</html>
