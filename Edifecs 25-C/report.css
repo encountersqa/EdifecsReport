@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+.container {
+    width: 100%;
+    max-width: none;
+    padding-left: 1px;
+    height: 100vh;
+}
+.row .col.l6 {
+    width: 30%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+#charts-row .card-panel {
+    
+    height: 80px;
+}
+
+.subview-left {
+    border-right: 1px solid #eee;
+    max-width: 80%;
+    min-width: 10%;
+    resize: horizontal;
+    vertical-align: top;
+    width: 30%;
+    hight: 100%;
+    display:block;
+    padding: 0px 20px;
+    
+}
+.test-status {
+    text-transform: capitalize;
+    font-size: 13px;
+    top:20px;
+    left:280px;
+    margin-top:-15px;
+      
+}
+.view {
+	width: 100%;
+	display: table;
+	
+}
+.subview-left, .subview-right {
+    display: block;
+    overflow-y: none;
+    overflow-x: none; 
+    padding: 0 20px;
+}
+
+
